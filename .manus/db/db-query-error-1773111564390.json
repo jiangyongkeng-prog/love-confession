@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE recharges ADD COLUMN screenshotUrl LONGTEXT NULL AFTER method, ADD COLUMN approvedBy INT NULL AFTER status, ADD COLUMN approvedAt TIMESTAMP NULL AFTER approvedBy, ADD COLUMN rejectionReason LONGTEXT NULL AFTER approvedAt, ADD COLUMN updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP AFTER rejectionReason, MODIFY COLUMN status ENUM('pending', 'approved', 'rejected', 'failed') DEFAULT 'pending' NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute ALTER TABLE recharges ADD COLUMN screenshotUrl LONGTEXT NULL AFTER method, ADD COLUMN approvedBy INT NULL AFTER status, ADD COLUMN approvedAt TIMESTAMP NULL AFTER approvedBy, ADD COLUMN rejectionReason LONGTEXT NULL AFTER approvedAt, ADD COLUMN updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP AFTER rejectionReason, MODIFY COLUMN status ENUM('pending', 'approved', 'rejected', 'failed') DEFAULT 'pending' NOT NULL;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'approvedby' in 'recharges'"
+  ]
+}

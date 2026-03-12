@@ -1,0 +1,62 @@
+{
+  "query": "SELECT * FROM users;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SELECT * FROM users;",
+  "rows": [
+    {
+      "id": "1",
+      "openId": "NULL",
+      "username": "123123",
+      "password": "$2b$10$UokThHtPXc6OxnV7mFzhxeu6DAdsUbT42lN9J98OFdCAU40j2e.r2",
+      "name": "NULL",
+      "email": "NULL",
+      "loginMethod": "NULL",
+      "role": "user",
+      "balance": "1058.98",
+      "createdAt": "2026-03-09 11:15:41",
+      "updatedAt": "2026-03-10 06:25:00"
+    },
+    {
+      "id": "2",
+      "openId": "NULL",
+      "username": "234234",
+      "password": "$2b$10$OM.iYswNA6P2L8BCYtULfuTgYVYXbvDu/wTCvLRMHD92YM/LEqHX2",
+      "name": "NULL",
+      "email": "NULL",
+      "loginMethod": "NULL",
+      "role": "user",
+      "balance": "21.00",
+      "createdAt": "2026-03-09 11:28:28",
+      "updatedAt": "2026-03-10 03:18:41"
+    },
+    {
+      "id": "30001",
+      "openId": "NULL",
+      "username": "admin",
+      "password": "$2b$10$hD7IKqDnlHNZovDkvAHw/e9JTwiecrHKKAr/XnmTrBjIXAzjAS1Pi",
+      "name": "NULL",
+      "email": "NULL",
+      "loginMethod": "NULL",
+      "role": "admin",
+      "balance": "20.00",
+      "createdAt": "2026-03-10 03:41:53",
+      "updatedAt": "2026-03-10 06:25:00"
+    },
+    {
+      "id": "30002",
+      "openId": "NULL",
+      "username": "customer1",
+      "password": "$2b$10$5S6EcXe4ZJPppMF6lhNk1OVplaPzgG/1wqSngJE2onFpe4JoXt2t.",
+      "name": "NULL",
+      "email": "NULL",
+      "loginMethod": "NULL",
+      "role": "user",
+      "balance": "0.00",
+      "createdAt": "2026-03-10 03:46:30",
+      "updatedAt": "2026-03-10 03:46:30"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tusername\tpassword\tname\temail\tloginMethod\trole\tbalance\tcreatedAt\tupdatedAt\n1\tNULL\t123123\t$2b$10$UokThHtPXc6OxnV7mFzhxeu6DAdsUbT42lN9J98OFdCAU40j2e.r2\tNULL\tNULL\tNULL\tuser\t1058.98\t2026-03-09 11:15:41\t2026-03-10 06:25:00\n2\tNULL\t234234\t$2b$10$OM.iYswNA6P2L8BCYtULfuTgYVYXbvDu/wTCvLRMHD92YM/LEqHX2\tNULL\tNULL\tNULL\tuser\t21.00\t2026-03-09 11:28:28\t2026-03-10 03:18:41\n30001\tNULL\tadmin\t$2b$10$hD7IKqDnlHNZovDkvAHw/e9JTwiecrHKKAr/XnmTrBjIXAzjAS1Pi\tNULL\tNULL\tNULL\tadmin\t20.00\t2026-03-10 03:41:53\t2026-03-10 06:25:00\n30002\tNULL\tcustomer1\t$2b$10$5S6EcXe4ZJPppMF6lhNk1OVplaPzgG/1wqSngJE2onFpe4JoXt2t.\tNULL\tNULL\tNULL\tuser\t0.00\t2026-03-10 03:46:30\t2026-03-10 03:46:30\n",
+  "stderr": "",
+  "execution_time_ms": 67
+}

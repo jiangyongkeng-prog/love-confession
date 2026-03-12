@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, username, role FROM users LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SELECT id, username, role FROM users LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "username": "123123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "username": "234234",
+      "role": "user"
+    },
+    {
+      "id": "30001",
+      "username": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "30002",
+      "username": "customer1",
+      "role": "user"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tusername\trole\n1\t123123\tuser\n2\t234234\tuser\n30001\tadmin\tadmin\n30002\tcustomer1\tuser\n",
+  "stderr": "",
+  "execution_time_ms": 171
+}

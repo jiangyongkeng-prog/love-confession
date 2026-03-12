@@ -1,0 +1,9 @@
+{
+  "query": "DROP TABLE IF EXISTS partnerships; DROP TABLE IF EXISTS recharges; DROP TABLE IF EXISTS transactions; DROP TABLE IF EXISTS orders; DROP TABLE IF EXISTS users;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute DROP TABLE IF EXISTS partnerships; DROP TABLE IF EXISTS recharges; DROP TABLE IF EXISTS transactions; DROP TABLE IF EXISTS orders; DROP TABLE IF EXISTS users;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 249
+}

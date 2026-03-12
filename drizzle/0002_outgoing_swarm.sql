@@ -1,0 +1,1 @@
+ALTER TABLE `orders` MODIFY COLUMN `type` varchar(100) NOT NULL;

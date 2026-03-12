@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, userId, amount, status FROM recharges ORDER BY createdAt DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SELECT id, userId, amount, status FROM recharges ORDER BY createdAt DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "90004",
+      "userId": "60001",
+      "amount": "100.00",
+      "status": "pending"
+    },
+    {
+      "id": "90003",
+      "userId": "60001",
+      "amount": "50.00",
+      "status": "pending"
+    },
+    {
+      "id": "90002",
+      "userId": "60001",
+      "amount": "100.00",
+      "status": "pending"
+    },
+    {
+      "id": "90001",
+      "userId": "1",
+      "amount": "20.00",
+      "status": "pending"
+    },
+    {
+      "id": "60001",
+      "userId": "1",
+      "amount": "19.98",
+      "status": "approved"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuserId\tamount\tstatus\n90004\t60001\t100.00\tpending\n90003\t60001\t50.00\tpending\n90002\t60001\t100.00\tpending\n90001\t1\t20.00\tpending\n60001\t1\t19.98\tapproved\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

@@ -1,0 +1,25 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_geonz6r78k6o6GjBy94wRM": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_geonz6r78k6o6GjBy94wRM": "orders"
+    },
+    {
+      "Tables_in_geonz6r78k6o6GjBy94wRM": "partnerships"
+    },
+    {
+      "Tables_in_geonz6r78k6o6GjBy94wRM": "recharges"
+    },
+    {
+      "Tables_in_geonz6r78k6o6GjBy94wRM": "transactions"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_geonz6r78k6o6GjBy94wRM\n__drizzle_migrations\norders\npartnerships\nrecharges\ntransactions\n",
+  "stderr": "",
+  "execution_time_ms": 66
+}

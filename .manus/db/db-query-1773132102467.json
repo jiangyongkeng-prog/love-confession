@@ -1,0 +1,9 @@
+{
+  "query": "SELECT id, customerId, title, status FROM orders WHERE status = 'pending' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SELECT id, customerId, title, status FROM orders WHERE status = 'pending' LIMIT 10;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 67
+}

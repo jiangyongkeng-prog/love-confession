@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE users ADD COLUMN openId VARCHAR(64) UNIQUE AFTER id;\nALTER TABLE users ADD COLUMN name TEXT AFTER email;\nALTER TABLE users ADD COLUMN loginMethod VARCHAR(64) AFTER name;\nALTER TABLE users MODIFY COLUMN password TEXT;\nALTER TABLE users MODIFY COLUMN username VARCHAR(64) UNIQUE;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute ALTER TABLE users ADD COLUMN openId VARCHAR(64) UNIQUE AFTER id;\nALTER TABLE users ADD COLUMN name TEXT AFTER email;\nALTER TABLE users ADD COLUMN loginMethod VARCHAR(64) AFTER name;\nALTER TABLE users MODIFY COLUMN password TEXT;\nALTER TABLE users MODIFY COLUMN username VARCHAR(64) UNIQUE;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'geonz6r78k6o6gjby94wrm.users' doesn't exist"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1773054852212,
+      "tag": "0000_clean_zombie",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1773112058488,
+      "tag": "0001_legal_punisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1773137368663,
+      "tag": "0002_outgoing_swarm",
+      "breakpoints": true
+    }
+  ]
+}

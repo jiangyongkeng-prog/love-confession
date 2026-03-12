@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, customerId, title, status FROM orders ORDER BY createdAt DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway04.us-east-1.prod.aws.tidbcloud.com --port 4000 --user nt16q4pXxbtpkSn.root --database geonz6r78k6o6GjBy94wRM --execute SELECT id, customerId, title, status FROM orders ORDER BY createdAt DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "90004",
+      "customerId": "1",
+      "title": "拖地",
+      "status": "paid"
+    },
+    {
+      "id": "60115",
+      "customerId": "6",
+      "title": "做饭",
+      "status": "accepted"
+    },
+    {
+      "id": "60114",
+      "customerId": "5",
+      "title": "看电影",
+      "status": "accepted"
+    },
+    {
+      "id": "60106",
+      "customerId": "6",
+      "title": "做饭",
+      "status": "accepted"
+    },
+    {
+      "id": "60105",
+      "customerId": "5",
+      "title": "看电影",
+      "status": "accepted"
+    },
+    {
+      "id": "60096",
+      "customerId": "5",
+      "title": "看电影",
+      "status": "accepted"
+    },
+    {
+      "id": "60097",
+      "customerId": "6",
+      "title": "做饭",
+      "status": "accepted"
+    },
+    {
+      "id": "60089",
+      "customerId": "5",
+      "title": "看电影",
+      "status": "accepted"
+    },
+    {
+      "id": "60090",
+      "customerId": "6",
+      "title": "做饭",
+      "status": "accepted"
+    },
+    {
+      "id": "60079",
+      "customerId": "5",
+      "title": "看电影",
+      "status": "accepted"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tcustomerId\ttitle\tstatus\n90004\t1\t拖地\tpaid\n60115\t6\t做饭\taccepted\n60114\t5\t看电影\taccepted\n60106\t6\t做饭\taccepted\n60105\t5\t看电影\taccepted\n60096\t5\t看电影\taccepted\n60097\t6\t做饭\taccepted\n60089\t5\t看电影\taccepted\n60090\t6\t做饭\taccepted\n60079\t5\t看电影\taccepted\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}
