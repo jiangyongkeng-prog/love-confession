@@ -278,150 +278,151 @@ export default function Home() {
   // ==================== 登录/注册页面 ====================
   if (!currentUser) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 p-4 relative overflow-hidden">
+   <div className="min-h-screen flex items-center justify-center bg-[url('/romantic-bg.jpg')] bg-cover bg-center bg-no-repeat bg-black/40 bg-blend-overlay p-4 relative overflow-hidden">
         <Particles />
-        <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative z-10">
-          <h1 className="text-4xl font-bold text-center mb-8 text-gray-900">
-            🎖️ WMS指挥部
-          </h1>
+    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-2xl p-8 w-full max-w-md relative z-10">
+      <h1 className="text-4xl font-bold text-center mb-8 text-white tracking-widest drop-shadow-lg">
+        ✨ wms指挥部
+      </h1>
 
-          {currentPage === "login" ? (
-            <form onSubmit={handleLogin} className="space-y-4">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900">登录账号</h2>
-              <input
-                type="text"
-                placeholder="用户名"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="password"
-                placeholder="密码"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <Button type="submit" className="w-full py-3 text-lg">
-                登录
-              </Button>
-              <p className="text-center text-gray-700 font-medium">
-                没有账号？
-                <button
-                  type="button"
-                  onClick={() => setCurrentPage("register")}
-                  className="text-blue-600 hover:text-blue-700 hover:underline ml-2 font-semibold"
-                >
-                  点击注册
-                </button>
-              </p>
-            </form>
-          ) : (
-            <form onSubmit={handleRegister} className="space-y-4">
-              <h2 className="text-2xl font-bold mb-6 text-gray-900">创建账号</h2>
-              <input
-                type="text"
-                placeholder="用户名"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input
-                type="password"
-                placeholder="密码"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <Button type="submit" className="w-full py-3 text-lg">
-                注册
-              </Button>
-              <p className="text-center text-gray-700 font-medium">
-                已有账号？
-                <button
-                  type="button"
-                  onClick={() => setCurrentPage("login")}
-                  className="text-blue-600 hover:text-blue-700 hover:underline ml-2 font-semibold"
-                >
-                  点击登录
-                </button>
-              </p>
-            </form>
-          )}
-        </div>
+      {currentPage === "login" ? (
+        <form onSubmit={handleLogin} className="space-y-4">
+          <h2 className="text-2xl font-bold mb-6 text-white">登录账号</h2>
+          <input
+            type="text"
+            placeholder="输入用户名"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-white placeholder-gray-300 transition-all shadow-inner"
+          />
+          <input
+            type="password"
+            placeholder="输入密码"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-white placeholder-gray-300 transition-all shadow-inner"
+          />
+          <Button type="submit" className="w-full py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg shadow-purple-500/40 border-none transition-transform hover:scale-[1.02]">
+            开始求人
+          </Button>
+          <p className="text-center text-white/80 font-medium mt-6">
+            还没有降落凭证？
+            <button
+              type="button"
+              onClick={() => setCurrentPage("register")}
+              className="text-pink-300 hover:text-pink-100 hover:underline ml-2 font-semibold transition-colors"
+            >
+              点击注册
+            </button>
+          </p>
+        </form>
+      ) : (
+        <form onSubmit={handleRegister} className="space-y-4">
+          <h2 className="text-2xl font-bold mb-6 text-white">创建账号</h2>
+          <input
+            type="text"
+            placeholder="设置用户名"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-white placeholder-gray-300 transition-all shadow-inner"
+          />
+          <input
+            type="password"
+            placeholder="设置密码"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 text-white placeholder-gray-300 transition-all shadow-inner"
+          />
+          <Button type="submit" className="w-full py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg shadow-purple-500/40 border-none transition-transform hover:scale-[1.02]">
+            注册星空账号
+          </Button>
+          <p className="text-center text-white/80 font-medium mt-6">
+            已有降落凭证？
+            <button
+              type="button"
+              onClick={() => setCurrentPage("login")}
+              className="text-pink-300 hover:text-pink-100 hover:underline ml-2 font-semibold transition-colors"
+            >
+              点击登录
+            </button>
+          </p>
+        </form>
+      )}
+    </div>
       </div>
     );
   }
 
   // ==================== 客户主界面 - Dashboard ====================
-  if (userRole === "customer" && currentPage === "customer-dashboard") {
-    const balance = profile?.balance || "0.00";
-    const pendingCount = myOrders.filter(o => o.status !== "completed" && o.status !== "paid").length;
+    if (userRole === "customer" && currentPage === "customer-dashboard") {
+      const balance = profile?.balance || "0.00";
+      const pendingCount = myOrders.filter(o => o.status !== "completed" && o.status !== "paid").length;
 
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="bg-white shadow-sm border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">💼 我的指挥部</h1>
-            <Button variant="outline" onClick={handleLogout} className="text-red-600 hover:text-red-700">
-              退出登录
-            </Button>
-          </div>
-        </div>
+      return (
+        <div className="min-h-screen bg-[url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center bg-fixed bg-no-repeat bg-black/60 bg-blend-overlay">
 
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          {/* 数据看板 */}
-          <div className="grid grid-cols-2 gap-6 mb-12">
-            <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-blue-500">
-              <p className="text-gray-600 text-sm font-medium mb-2">当前账户余额</p>
-              <p className="text-4xl font-bold text-blue-600">¥ {balance}</p>
-            </div>
-            <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-orange-500">
-              <p className="text-gray-600 text-sm font-medium mb-2">进行中的任务</p>
-              <p className="text-4xl font-bold text-orange-600">{pendingCount} 个</p>
+          {/* 顶部导航 - 半透明磨砂 */}
+          <div className="bg-white/5 backdrop-blur-md border-b border-white/10">
+            <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+              <h1 className="text-2xl font-bold text-white tracking-widest drop-shadow-md">✨ wms指挥部</h1>
+              <Button variant="outline" onClick={handleLogout} className="bg-white/10 border-white/20 text-pink-300 hover:bg-white/20 hover:text-pink-100 hover:border-white/30 backdrop-blur-sm transition-all">
+                退出频道
+              </Button>
             </div>
           </div>
 
-          {/* 核心功能区 - Grid 布局 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* 充值中心 */}
-            <button
-              onClick={() => setCurrentPage("recharge-approval")}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:scale-105 transform"
-            >
-              <div className="text-6xl mb-4">💸</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">充值中心</h3>
-              <p className="text-gray-600 text-sm">申请充值，增加账户余额</p>
-              <div className="mt-6 text-blue-600 font-semibold group-hover:text-blue-700">点击进入 →</div>
-            </button>
+          <div className="max-w-7xl mx-auto px-6 py-12">
+            {/* 数据看板 - 毛玻璃霓虹质感 */}
+            <div className="grid grid-cols-2 gap-6 mb-12">
+              <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-8 border-l-4 border-pink-400 border-y border-r border-white/10 transition-all hover:bg-white/15">
+                <p className="text-white/70 text-sm font-medium mb-2 tracking-wider">余额</p>
+                <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-purple-300 drop-shadow-sm">¥ {balance}</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-8 border-l-4 border-purple-400 border-y border-r border-white/10 transition-all hover:bg-white/15">
+                <p className="text-white/70 text-sm font-medium mb-2 tracking-wider">进行中任务</p>
+                <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-indigo-300 drop-shadow-sm">{pendingCount} 个</p>
+              </div>
+            </div>
 
-            {/* 下达任务 */}
-            <button
-              onClick={() => setCurrentPage("create-order")}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:scale-105 transform"
-            >
-              <div className="text-6xl mb-4">📝</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">下达任务</h3>
-              <p className="text-gray-600 text-sm">创建新的任务，等待商家接单</p>
-              <div className="mt-6 text-blue-600 font-semibold group-hover:text-blue-700">点击进入 →</div>
-            </button>
+            {/* 核心功能区 - 悬浮毛玻璃卡片 */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* 充值中心 -> 收集星光 */}
+              <button
+                onClick={() => setCurrentPage("recharge-approval")}
+                className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg hover:shadow-pink-500/20 hover:bg-white/10 transition-all duration-300 p-8 text-center hover:-translate-y-2"
+              >
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">💎</div>
+                <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">充值</h3>
+                <p className="text-white/60 text-sm">求我一次给十块</p>
+                <div className="mt-6 text-pink-300 font-semibold tracking-widest text-sm group-hover:text-pink-200 transition-colors">开启通道 ✦</div>
+              </button>
 
-            {/* 我的任务 */}
-            <button
-              onClick={() => setCurrentPage("my-orders")}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 text-center hover:scale-105 transform"
-            >
-              <div className="text-6xl mb-4">📋</div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">我的任务</h3>
-              <p className="text-gray-600 text-sm">查看和管理所有任务记录</p>
-              <div className="mt-6 text-blue-600 font-semibold group-hover:text-blue-700">点击进入 →</div>
-            </button>
+              {/* 下达任务 -> 发送心跳信号 */}
+              <button
+                onClick={() => setCurrentPage("create-order")}
+                className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg hover:shadow-purple-500/20 hover:bg-white/10 transition-all duration-300 p-8 text-center hover:-translate-y-2"
+              >
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">💌</div>
+                <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">花钱</h3>
+                <p className="text-white/60 text-sm">十元起开始布置任务</p>
+                <div className="mt-6 text-purple-300 font-semibold tracking-widest text-sm group-hover:text-purple-200 transition-colors">立即发送 ✦</div>
+              </button>
+
+              {/* 我的任务 -> 浪漫轨迹 */}
+              <button
+                onClick={() => setCurrentPage("my-orders")}
+                className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-lg hover:shadow-indigo-500/20 hover:bg-white/10 transition-all duration-300 p-8 text-center hover:-translate-y-2"
+              >
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg">📖</div>
+                <h3 className="text-2xl font-bold text-white mb-2 tracking-wide">任务</h3>
+                <p className="text-white/60 text-sm">任务记录</p>
+                <div className="mt-6 text-indigo-300 font-semibold tracking-widest text-sm group-hover:text-indigo-200 transition-colors">翻阅记录 ✦</div>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    );
-  }
-
+      );
+    }
   // ==================== 我的任务页面 ====================
   if (userRole === "customer" && currentPage === "my-orders") {
     return (
